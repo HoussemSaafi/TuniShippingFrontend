@@ -124,12 +124,11 @@ $conn= ConnexionBD::getInstance();
 			    	<div class="clear"></div>
      			</ul>
 	     	</div>
-                <div class="search_box">
-                    <form>
-                        <input type="text" id="keywordSearch" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'search';}" ><input type="submit" onclick="search()" value="">
-                    </form>
-                </div>
-
+        <div class="search_box">
+            <form action="search.php" method="get" >
+                <input type="text" id="keywordSearch"  name="keyword" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'search';}" ><input  type="submit" id="keywordSearch" onclick="search()" value="">
+            </form>
+        </div>
 	     	<div class="clear"></div>
 	     </div>	     
 	<div class="header_slide">

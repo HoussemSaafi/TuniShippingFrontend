@@ -48,7 +48,7 @@
 		}
 		
 		
-		public function detailleLivraison($dateLivraison,$adresse,$idClient)
+		public function detailleLivraison($dateLivraison,$adresse,$l)
 		{   //session_start();
 			$this->dateLivraison=$dateLivraison;
 			$this->adresse=$adresse;
@@ -70,7 +70,13 @@
                 echo"<a href='index.php'> Rentrez au Shop </a>";
                 //header('');
 			}
-			else{echo "<br>livraison non ajoutée<br>";}
+			else{
+                $_SESSION['panier']['prixProduit']= array();
+                $_SESSION['panier']['idProduit']=array();
+                $_SESSION['panier']['qte']=array();
+                echo "<br>livraison non ajoutée<br>";
+             echo"<a href='index.php'> Rentrez au Shop </a>";
+			    ;}
 		//	($res);
 		}
 
