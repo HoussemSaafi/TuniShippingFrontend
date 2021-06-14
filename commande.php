@@ -249,13 +249,13 @@ $value/100+8;
 						($this->idCommande);
 					$sql="INSERT into linedecommande (IDCommande,Qte,Ref) values(".$this->idCommande[0].",".$_SESSION['panier']['qte'][$key].",".$idp[0].")";
 					var_dump($sql);
-					if($this->conn->query($sql))
-					{
-						$sql="UPDATE produit set Quantite=(Quantite-".$_SESSION['panier']['qte'][$key].") WHERE IDProduit=".$idp[0];
-						if($this->conn->query($sql))
-							{ echo "qte updated<br>";}
-						//echo "ok";
-					}
+//					if($this->conn->query($sql))
+//					{
+//						$sql="UPDATE produit set Quantite=(Quantite-".$_SESSION['panier']['qte'][$key].") WHERE IDProduit=".$idp[0];
+//						if($this->conn->query($sql))
+//							{ echo "qte updated<br>";}
+//						//echo "ok";
+//					}
 				}
 				}
 			}
