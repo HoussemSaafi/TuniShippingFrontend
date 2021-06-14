@@ -58,8 +58,9 @@
 		public function creerLivraison()
 		{
 			$sql="INSERT into livraison (DateLivraison,etatLivraison,IDCommande,adresse,IDClient)	values(CURDATE(),'Approuvée',".$_SESSION['idCommande'][0].",'".$this->adresse."',".$this->idClient.")";
-			($sql);
+			var_dump($sql);
 			$res=$this->conn->query($sql);
+			var_dump($res);
 			if($res)
 			{
 				echo "<br>Votre Commande et livraison ont été ajoutés avec Succes!<br>";

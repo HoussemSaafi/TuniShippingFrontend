@@ -216,10 +216,12 @@ $value/100+8;
 			$this->idClient=$_SESSION['user_id'];
 			$this->prixTotale=$_SESSION['prixtot'];
 			$sql="INSERT into commande (DateCreation,EtatPaiment,prixtotale,IDClient,IDReduction) values(CURDATE(),'non payée',".$this->prixTotale.",".$this->idClient.",2)";
+			echo 'requete insert commande';
+			var_dump($sql);
 			$resultatreq=$this->conn->query($sql);
 			//$this->idCommande=$resultatreq[IDCommande];
-			($sql);
-			($resultatreq);
+			var_dump($sql);
+			var_dump($resultatreq);
 			if ($resultatreq==false) {
 				echo "errrr";
 			}
@@ -241,7 +243,6 @@ $value/100+8;
 				foreach ($_SESSION['panier']['idProduit'] as $key => $value) {
 
 						$req="SELECT Ref from produit where Ref='".$value."'";
-						($req);
 						$resul=$this->conn->query($req);
 						$idprod=$resul->fetchall();
 						foreach ($idprod as $idp) {

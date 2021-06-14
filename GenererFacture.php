@@ -4,7 +4,7 @@ if(!isset($_SESSION)) session_start();
 $c =new Commande();
 $c->ajouterCommande();
 //($_SESSION['client']);
-$Commande=$c->commandefacture($_SESSION['client']);
+$Commande=$c->commandefacture($_SESSION['user_session']);
 ($Commande);
 foreach ($Commande as $key => $value) {
     # code...
