@@ -5,7 +5,7 @@ $c =new Commande();
 $c->ajouterCommande();
 //($_SESSION['client']);
 $Commande=$c->commandefacture($_SESSION['user_session']);
-($Commande);
+var_dump($Commande);
 foreach ($Commande as $key => $value) {
     # code...
     $prod=$c->detaillefacture($value['IDCommande']);
