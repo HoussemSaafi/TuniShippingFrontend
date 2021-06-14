@@ -13,7 +13,7 @@ if(!isset($_SESSION)) session_start();
     //$l->idClient=$_SESSION['user_session'];
 	//$l->detailleLivraison("",$_SESSION['adresse'],$_SESSION['user_session']);
 	//$l->creerLivraison();
-    $sql="INSERT into livraison (DateLivraison,etatLivraison,IDCommande,adresse,IDClient)	values(CURDATE(),'Approuvée',".$_SESSION['idCommande'][0].",'".$_SESSION['adresse']."',".$_SESSION['user_session'].")";
+    $sql="INSERT into livraison (DateLivraison,etatLivraison,IDCommande,adresse,IDClient)	values(CURDATE(),'Approuvée',".$_SESSION['idCommande'][0].",'".$_SESSION['adresse']."',".$_SESSION['user_id'].")";
 			var_dump($sql);
 			$res=$conn->query($sql);
 			var_dump($res);
