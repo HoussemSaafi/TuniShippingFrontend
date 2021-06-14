@@ -1,5 +1,6 @@
 <?php
-
+include_once 'ConnexionBD.php';
+$conn=ConnexionBD::getInstance();
 //include 'livraison.php';
 include 'commande.php';
 if(!isset($_SESSION)) session_start();
@@ -14,7 +15,7 @@ if(!isset($_SESSION)) session_start();
 	//$l->creerLivraison();
     $sql="INSERT into livraison (DateLivraison,etatLivraison,IDCommande,adresse,IDClient)	values(CURDATE(),'Approuvée',".$_SESSION['idCommande'][0].",'".$_SESSION['adresse']."',".$_SESSION['user_session'].")";
 			var_dump($sql);
-			$res=$this->conn->query($sql);
+			$res=$conn->query($sql);
 			var_dump($res);
 			if($res)
             {
