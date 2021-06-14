@@ -19,9 +19,9 @@ $conn= ConnexionBD::getInstance();
 
 $result=$conn->query("SELECT * FROM produit WHERE Ref=".$_GET['IDProduit']);
 $res=$result->fetchAll();
-//var_dump($res);
+//($res);
 
-//var_dump($_SESSION["idProduit"]);
+//($_SESSION["idProduit"]);
 	?>
 
 
@@ -175,7 +175,7 @@ $res=$result->fetchAll();
 
 									$result=$conn->query("SELECT * FROM produit WHERE Ref=".$_GET['IDProduit']);
 							        $res=$result->fetchAll();
-							       var_dump($res);
+							   //   ($res);
 
 							        foreach($res as $r)
 							        {

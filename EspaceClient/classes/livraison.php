@@ -35,7 +35,7 @@ include '../classes/Commande.php';
 			 , etatLivraison 	='".$etat."' 
 			  where IDLivraison=".$id."
 			";
-			var_dump($sql);
+			($sql);
 			return $this->conn->query($sql);
 		}
 
@@ -69,14 +69,14 @@ include '../classes/Commande.php';
 		public function creerLivraison()
 		{
 			$sql="INSERT into livraison (DateLivraison,EtatLivraison,IDCommande,adresse,IDClient)	values(CURDATE(),'Approuvée',".$_SESSION['idCommande'].",'".$this->adresse."',".$this->idClient.")";
-			//var_dump($sql);
+			//($sql);
 			$res=$this->conn->query($sql);
 			if($res)
 			{
 				echo "<br>livraison ajouter<br>";
 			}
 			else{echo "<br>livraison non ajouter<br>";}
-		//	var_dump($res);
+		//	($res);
 		}
 
 

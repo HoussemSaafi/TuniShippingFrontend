@@ -227,7 +227,7 @@ else
 				
 			}
 			else{
-				var_dump($paypal->errors);
+				($paypal->errors);
 				die('Erreur');
 				
 				
@@ -404,7 +404,6 @@ $pt_fid_user = $s->pt_fid_user; ?>
 					<?php } ?>
 				</ul>
 				<p>
-					© DecArt 2016. All Rights Reserved.
 				</p>
 			</div>
 		</div>

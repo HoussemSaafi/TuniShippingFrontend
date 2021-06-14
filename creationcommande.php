@@ -18,7 +18,7 @@ if(!isset($_SESSION)) session_start();
 //	}
 	$prix=$c->CalculerPrixTotale();
 	$c->ajouterCommande();
-    var_dump($_SESSION['panier']['idProduit']);
+  //  ($_SESSION['panier']['idProduit']);
 	$l=new Livraison();
 
 	$l->detailleLivraison("",$_SESSION['adresse'],$_SESSION['user_session']);

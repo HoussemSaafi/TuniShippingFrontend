@@ -21,12 +21,12 @@ function afficherPanier()
             <?php
             if (isset($_SESSION['panier']))
             {
-                var_dump($_SESSION['panier']['idProduit']);
-                var_dump($_SESSION['panier']['prixProduit']);
+              //  ($_SESSION['panier']['idProduit']);
+              //  ($_SESSION['panier']['prixProduit']);
 //              $_SESSION['panier']['prixProduit']= array();
 // $_SESSION['panier']['idProduit']=array();
   //            $_SESSION['panier']['qte']=array();
-                var_dump($_SESSION['panier']['qte']);
+              //  ($_SESSION['panier']['qte']);
                 foreach ($_SESSION['panier']['idProduit']as $key => $value) {
                     $prices+=$_SESSION['panier']['prixProduit'][$key]*$_SESSION['panier']['qte'][$key];
 

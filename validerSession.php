@@ -9,10 +9,10 @@ session_start();
    // $_SESSION['mdp']=mdp;
 	if($c->ValiderSession($username,$mdp))
 	{//$_SESSION['khorma']=$c->idClient;
-        var_dump($_SESSION['user_session']);
-	    //var_dump($c->idClient);
+        //($_SESSION['user_session']);
+	    //($c->idClient);
 	    $_SESSION['user_id']=$c->idClient;
-	    //var_dump( $_SESSION['user_id']);
+	    //( $_SESSION['user_id']);
 		header('Location:remplirAdresse.php');
         }
 		

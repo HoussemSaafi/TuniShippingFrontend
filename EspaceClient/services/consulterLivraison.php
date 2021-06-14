@@ -18,11 +18,11 @@ if(isset($_GET['idlivraison']))
 $l=new livraison();
 
 $listelivraison=$l->afficherdetaillelivraison($_GET['idlivraison']);
-//var_dump($listelivraison);
+//($listelivraison);
 $c= new Commande();
 $comm=$c->afficherdetaillecommande($listelivraison[0]['IDCommande']);
 $liste=$c->afficherlignepourClient($listelivraison[0]['IDCommande']);
-//var_dump($liste);
+//($liste);
 
 }
 

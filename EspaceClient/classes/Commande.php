@@ -81,7 +81,7 @@ class Commande
 		
 			$stmt = $this->conn->prepare("SELECT IDclient, username, email, mdp FROM client WHERE username='".$username."'");
 			$stmt->execute();
-			//var_dump($stmt);
+			//($stmt);
 			$userRow=$stmt->fetch();
 			if($stmt->rowCount() == 1)
 			{
@@ -103,13 +103,13 @@ class Commande
 	public function CalculerPrixTotale()
 	{
 		$prom=array();
-		//var_dump($_SESSION['panier']['idProduit'] );
+		//($_SESSION['panier']['idProduit'] );
 		foreach ($_SESSION['panier']['idProduit'] as $key => $value) {
 			
 			$res=$this->conn->query("SELECT PrixHT ,TVA,IDProduit from produit where Designation='".$value."'");
-		//	var_dump($res );
+		//	($res );
 			$liste=$res->fetchall();
-//var_dump($liste);
+//($liste);
 			foreach ($liste as $i => $l) {
 				array_push($this->tabprixProduit, $l['PrixHT']);
 				array_push($this->tabtvaProduit, $l['TVA']);
@@ -130,7 +130,7 @@ class Commande
 			
 			$res=$this->conn->query("SELECT TauxDeProm from promotion where (IDPromotion=".$value." and DateFin > CURDATE() )");
 			$liste=$res->fetchall();
-//var_dump($liste);
+//($liste);
 			foreach ($liste as $i => $l) {
 				array_push($this->tabpromProduit, $l['TauxDeProm']);
 			}
@@ -164,8 +164,8 @@ $this->tabpromProduit[$k]/100+8;
 			$this->idClient=$_SESSION['user_session'];
 			$sql="INSERT into commande (DateCreation,EtatPaiment,IDClient,IDReduction,prixtotale) values(CURDATE(),'".$this->etatPaiment."',".$this->idClient.",".$this->idReduction.",".$this->prixTotale.")";
 			$resultatreq=$this->conn->query($sql);
-		/*	var_dump($sql);
-			var_dump($resultatreq);*/
+		/*	($sql);
+			($resultatreq);*/
 			if ($resultatreq==false) {
 				echo "errrr";
 			}
@@ -173,10 +173,10 @@ $this->tabpromProduit[$k]/100+8;
 				$sql="SELECT Max(IDCommande) from commande ";
 				$res=$this->conn->query($sql);
 				$liste=$res->fetchall();
-			//	var_dump($liste);
+			//	($liste);
 				foreach ($liste as $l) {
 					$this->idCommande=$l[0];
-				//	var_dump($this->idCommande);
+				//	($this->idCommande);
 					$_SESSION['idCommande']=$this->idCommande;
 				}
 

@@ -15,7 +15,7 @@
   $query=$auth_client->runQuery("SELECT linedecommande.Qte , linedecommande.Ref ,produit.Designation, produit.PrixHT, produit.TVA from linedecommande , produit where(linedecommande.IDCommande =:idCommande /*and  linedecommande.Ref = :produit.Ref*/)");
   $query->execute(array(":idCommande"=>$idCommande));
   $listeCommande=$query->fetchall();
-   //var_dump($listeCommande);
+   //($listeCommande);
 
 
 ?>

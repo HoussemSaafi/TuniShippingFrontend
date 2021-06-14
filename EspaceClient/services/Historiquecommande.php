@@ -15,7 +15,7 @@ require_once("../cruds/crudClient.php");
   $query=$auth_client->runQuery("SELECT IDCommande, DateCreation, EtatPaiment, prixtotale from commande  where IDclient=:client_id");
   $query->execute(array(":client_id"=>$client_id));
   $listeCommande=$query->fetchAll();
-//  var_dump($listeCommande);
+//  ($listeCommande);
 
 
 

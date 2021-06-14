@@ -24,7 +24,7 @@
 			 , etatLivraison 	='".$etat."' 
 			  where IDLivraison=".$id."
 			";
-			var_dump($sql);
+			//($sql);
 			return $this->conn->query($sql);
 		}
 
@@ -58,7 +58,7 @@
 		public function creerLivraison()
 		{
 			$sql="INSERT into livraison (DateLivraison,etatLivraison,IDCommande,adresse,IDClient)	values(CURDATE(),'Approuvée',".$_SESSION['idCommande'][0].",'".$this->adresse."',".$this->idClient.")";
-			var_dump($sql);
+			($sql);
 			$res=$this->conn->query($sql);
 			if($res)
 			{
@@ -70,7 +70,7 @@
                 //header('');
 			}
 			else{echo "<br>livraison non ajoutée<br>";}
-		//	var_dump($res);
+		//	($res);
 		}
 
 		function __construct()

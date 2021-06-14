@@ -10,8 +10,8 @@ include 'commande.php';
               $p= $c->CalculerPrixTotale();
               $p=round($p,2);
               $_SESSION['prixtot']=$p;
-             // var_dump($_SESSION['panier']['idProduit']);
-              // var_dump($_SESSION['panier']['idProduit']);
+             // ($_SESSION['panier']['idProduit']);
+              // ($_SESSION['panier']['idProduit']);
 ob_start();
 
 	?>

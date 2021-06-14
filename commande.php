@@ -93,7 +93,7 @@ class Commande
 		
 			$stmt = $this->conn->prepare("SELECT IDclient, username, email, mdp FROM client WHERE username='".$username."'");
 			$stmt->execute();
-			//var_dump($stmt);
+			//($stmt);
 			$userRow=$stmt->fetch();
 			if($stmt->rowCount() == 1)
 			{
@@ -115,13 +115,13 @@ class Commande
 	public function CalculerPrixTotale()
 	{
 		$prom=array();
-		//var_dump($_SESSION['panier']['idProduit'] );
+		//($_SESSION['panier']['idProduit'] );
 		foreach ($_SESSION['panier']['idProduit'] as $key => $value) {
 			
 			$res=$this->conn->query("SELECT PrixHT ,TVA,Ref from produit where Ref='".$value."'");
-		//	var_dump($res );
+		//	($res );
 			$liste=$res->fetchall();
-//var_dump($liste);
+//($liste);
 			foreach ($liste as $i => $l) {
 				array_push($this->tabprixProduit, $l['PrixHT']);
 				array_push($this->tabtvaProduit, $l['TVA']);
@@ -153,7 +153,7 @@ foreach ($_SESSION['panier']['qte'] as $key => $value) {
 			$res=$this->conn->query("SELECT TauxDeProm from promotion where (IDProduit=".$value." and DateFin > CURDATE() )");
 		
 			$liste=$res->fetchall();
-//var_dump($liste);
+//($liste);
 			foreach ($liste as $i => $l) {
 				array_push($_SESSION['panier']['Qte'], $l['TauxDeProm']);
 			}
@@ -186,7 +186,7 @@ $value/100+8;
 		
 
 			$sql="SELECT IDReduction,TauxReduction  from reduction where MontantMin = (SELECT MAX(MontantMin) from reduction where  (MontantMin <'.$this->prixTotale.' and DateFin> CURDATE() ))";
-			//var_dump($sql);
+			//($sql);
 			$res=$this->conn->query($sql);
 			$res=$res->fetchall();
 			if(count($res)==1)
@@ -212,14 +212,14 @@ $value/100+8;
 
 
 		public function ajouterCommande()
-		{   var_dump($_SESSION['user_id']);
+		{   //($_SESSION['user_id']);
 			$this->idClient=$_SESSION['user_id'];
 			$this->prixTotale=$_SESSION['prixtot'];
 			$sql="INSERT into commande (DateCreation,EtatPaiment,prixtotale,IDClient,IDReduction) values(CURDATE(),'non payée',".$this->prixTotale.",".$this->idClient.",2)";
 			$resultatreq=$this->conn->query($sql);
 			//$this->idCommande=$resultatreq[IDCommande];
-			var_dump($sql);
-			var_dump($resultatreq);
+			($sql);
+			($resultatreq);
 			if ($resultatreq==false) {
 				echo "errrr";
 			}
@@ -227,13 +227,13 @@ $value/100+8;
 				$sql="SELECT Max(IDCommande) from commande";
 				$res=$this->conn->query($sql);
 				$liste=$res->fetchall();
-			//	var_dump($liste);
+			//	($liste);
                     $this->idCommande=$liste[0];
-                    var_dump($this->idCommande);
+                    ($this->idCommande);
                     $_SESSION['idCommande']=$this->idCommande;
 //				foreach ($liste as $l) {;
 //					$this->idCommande=$l[0];
-//				//	var_dump($this->idCommande);
+//				//	($this->idCommande);
 //					$_SESSION['idCommande']=$this->idCommande;
 //				}
 
@@ -241,13 +241,13 @@ $value/100+8;
 				foreach ($_SESSION['panier']['idProduit'] as $key => $value) {
 
 						$req="SELECT Ref from produit where Ref='".$value."'";
-						var_dump($req);
+						($req);
 						$resul=$this->conn->query($req);
 						$idprod=$resul->fetchall();
 						foreach ($idprod as $idp) {
-						var_dump($this->idCommande);
+						($this->idCommande);
 					$sql="INSERT into linedecommande (IDCommande,Qte,Ref) values(".$this->idCommande[0].",".$_SESSION['panier']['qte'][$key].",".$idp[0].")";
-					var_dump($sql);
+					($sql);
 					if($this->conn->query($sql))
 					{
 						$sql="UPDATE produit set Quantite=(Quantite-".$_SESSION['panier']['qte'][$key].") WHERE IDProduit=".$idp[0];

@@ -3,13 +3,13 @@ require_once('commande.php');
 if(!isset($_SESSION)) session_start();
 $c =new Commande();
 $c->ajouterCommande();
-//var_dump($_SESSION['client']);
+//($_SESSION['client']);
 $Commande=$c->commandefacture($_SESSION['client']);
-var_dump($Commande);
+($Commande);
 foreach ($Commande as $key => $value) {
     # code...
     $prod=$c->detaillefacture($value['IDCommande']);
-    var_dump($prod);
+    ($prod);
 }
 
 

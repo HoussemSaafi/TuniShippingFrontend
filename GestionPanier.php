@@ -80,18 +80,18 @@ require_once('ConnexionBD.php');
 							if ($v['Quantite']>$_SESSION['qte']) {
 
 
-var_dump($_SESSION['idProduit']);
+//($_SESSION['idProduit']);
 
 								array_push($_SESSION['panier']['idProduit'], $_SESSION['idProduit']);
 								array_push($_SESSION['panier']['qte'], $_SESSION['qte']);
 
 								$id=$_SESSION['idProduit'];
 								$sql="SELECT PrixHT,TVA from produit where Ref ='".$_SESSION['idProduit']."'";
-								//var_dump($sql);
+								//($sql);
 								$res= $this->conn->query($sql);
-								//var_dump($res);
+								//($res);
 								$liste=$res->fetchAll();
-								var_dump($liste);
+								//($liste);
 								foreach ($liste as $value) {
 									echo $value[0];
 								}	}
