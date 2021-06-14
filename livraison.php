@@ -49,7 +49,7 @@
 		
 		
 		public function detailleLivraison($dateLivraison,$adresse,$l)
-		{   //session_start();
+		{   session_start();
 			$this->dateLivraison=$dateLivraison;
 			$this->adresse=$adresse;
 			$this->idClient=$_SESSION['user_session'];
