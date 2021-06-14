@@ -17,7 +17,7 @@
                     
                     <li class="left clearfix">
                             <span class="chat-img pull-left">
-                                <img src="../assets/images/users/avatar.jpg" alt="U" class="img-circle" />
+                                <img src="../assets/images/users/avatar.png" alt="U" class="img-circle" />
                             </span>
                                 <div class="chat-body clearfix">
                                     <div class="header">
