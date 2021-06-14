@@ -114,3 +114,7 @@ foreach ($Commande as $key => $value) {
     </div>
 
 </body>
+<?php $_SESSION['panier']['prixProduit']= array();
+$_SESSION['panier']['idProduit']=array();
+$_SESSION['panier']['qte']=array();
+?>
