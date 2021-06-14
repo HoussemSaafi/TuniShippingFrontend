@@ -43,17 +43,17 @@ $conn=ConnexionBD::getInstance();
                     {
                         ?>
                         <label class="h5">welcome : <?php print($userRow['username']); ?></label>
-                        <li><a href="../TuniShipping-Frontend/EspaceClient/services/profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;Espace Client</a></li>
+                        <li><a href="/EspaceClient/services/profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;Espace Client</a></li>
 
-                        <li><a href="../TuniShipping-Frontend/EspaceClient/services/logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Se Déconnecter</a></li>
+                        <li><a href="/EspaceClient/services/logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Se Déconnecter</a></li>
                         <?php
                     }
 
                     else
                     {
                         ?>
-                        <li><a href="../TuniShipping-Frontend/EspaceClient/services/sign-up.php">Créer un compte</a></li>
-                        <li><a href="../TuniShipping-Frontend/EspaceClient/services/profile.php">Se connecter</a></li>
+                        <li><a href="/EspaceClient/services/sign-up.php">Créer un compte</a></li>
+                        <li><a href="/EspaceClient/services/profile.php">Se connecter</a></li>
                         <?php
                     }
                     ?>

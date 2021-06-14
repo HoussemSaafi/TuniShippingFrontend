@@ -23,10 +23,10 @@
             <div class="col_1_of_4 span_1_of_4">
                 <h4>Compte</h4>
                 <ul>
-                    <li><a href="../TuniShipping-Frontend/EspaceClient/services/profile.php">Se connecter</a></li>
-                    <li><a href="../TuniShipping-Frontend/EspaceClient/services/sign-up.php">S'inscrire</a></li>
-                    <li><a href="../TuniShipping-Frontend/consulterPanier.php">Consulter panier</a></li>
-                    <li><a href="../TuniShipping-Frontend/EspaceClient/services/suivieLivraison.php">Suivie commande</a></li>
+                    <li><a href="/EspaceClient/services/profile.php">Se connecter</a></li>
+                    <li><a href="/EspaceClient/services/sign-up.php">S'inscrire</a></li>
+                    <li><a href="/consulterPanier.php">Consulter panier</a></li>
+                    <li><a href="/EspaceClient/services/suivieLivraison.php">Suivie commande</a></li>
                 </ul>
             </div>
             <div class="col_1_of_4 span_1_of_4">
