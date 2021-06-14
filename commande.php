@@ -217,11 +217,11 @@ $value/100+8;
 			$this->prixTotale=$_SESSION['prixtot'];
 			$sql="INSERT into commande (DateCreation,EtatPaiment,prixtotale,IDClient,IDReduction) values(CURDATE(),'non payée',".$this->prixTotale.",".$this->idClient.",2)";
 			echo 'requete insert commande';
-			var_dump($sql);
+		//	var_dump($sql);
 			$resultatreq=$this->conn->query($sql);
 			//$this->idCommande=$resultatreq[IDCommande];
-			var_dump($sql);
-			var_dump($resultatreq);
+		//	var_dump($sql);
+		//	var_dump($resultatreq);
 			if ($resultatreq==false) {
 				echo "errrr";
 			}
@@ -229,7 +229,7 @@ $value/100+8;
 				$sql="SELECT Max(IDCommande) from commande";
 				$res=$this->conn->query($sql);
 				$liste=$res->fetchall();
-			    var_dump($liste);
+			//    var_dump($liste);
                     $this->idCommande=$liste[0];
                     ($this->idCommande);
                     $_SESSION['idCommande']=$this->idCommande;
@@ -248,7 +248,7 @@ $value/100+8;
 						foreach ($idprod as $idp) {
 						($this->idCommande);
 					$sql="INSERT into linedecommande (IDCommande,Qte,Ref) values(".$this->idCommande[0].",".$_SESSION['panier']['qte'][$key].",".$idp[0].")";
-					var_dump($sql);
+				//	var_dump($sql);
 //					if($this->conn->query($sql))
 //					{
 //						$sql="UPDATE produit set Quantite=(Quantite-".$_SESSION['panier']['qte'][$key].") WHERE IDProduit=".$idp[0];

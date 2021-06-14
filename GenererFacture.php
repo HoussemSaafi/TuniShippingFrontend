@@ -1,15 +1,14 @@
 <?php
 require_once('commande.php');
 if(!isset($_SESSION)) session_start();
-$c =new Commande();
-$c->ajouterCommande();
-//($_SESSION['client']);
-$Commande=$c->commandefacture($_SESSION['user_session']);
-var_dump($Commande);
+$c =new commande();
+//var_dump($_SESSION['client']);
+$Commande=$c->commandefacture($_SESSION['user_id']);
+//var_dump($Commande);
 foreach ($Commande as $key => $value) {
     # code...
     $prod=$c->detaillefacture($value['IDCommande']);
-    ($prod);
+  //  var_dump($prod);
 }
 
 
@@ -17,7 +16,6 @@ foreach ($Commande as $key => $value) {
 
 
 <!DOCTYPE html>
-<html>
 <head>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
@@ -87,7 +85,6 @@ foreach ($Commande as $key => $value) {
                     <tbody>
                     <?php
                     foreach ($prod as $p) {
-
 
                         ?>
                         <tr>

@@ -14,9 +14,9 @@ if(!isset($_SESSION)) session_start();
 	//$l->detailleLivraison("",$_SESSION['adresse'],$_SESSION['user_session']);
 	//$l->creerLivraison();
     $sql="INSERT into livraison (DateLivraison,etatLivraison,IDCommande,adresse,IDClient)	values(CURDATE(),'Approuvée',".$_SESSION['idCommande'][0].",'".$_SESSION['adresse']."',".$_SESSION['user_id'].")";
-			var_dump($sql);
+		//	var_dump($sql);
 			$res=$conn->query($sql);
-			var_dump($res);
+		//	var_dump($res);
 			if($res)
             {
                 echo "<br>Votre Commande et livraison ont été ajoutés avec Succes!<br>";
@@ -33,4 +33,5 @@ if(!isset($_SESSION)) session_start();
                 echo "<br>livraison non ajoutée<br>";
                 echo"<a href='index.php'> Rentrez au Shop </a>";
                 ;}
+    header("Location:GenererFacture.php");
 ?>
