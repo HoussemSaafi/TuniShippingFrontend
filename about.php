@@ -186,7 +186,7 @@ include 'raccourciPanier.php';
 					     	<li><a href="#">Not gonna lie, we started this project for the money. We just want to be rich and that's it.</a></li>
 					     	<li><a href="#">Never believe what Safa said.</a></li>
 					     	<li><a href="#">I agree with whatever Houssem said.</a></li>
-					     	<li><a href="#">Unknown printer took a galley</a></li>
+					     	
 					     	<li><a href="#">That's it fellas</a></li>
 					     </ul>
 					 </div>
