@@ -320,12 +320,8 @@ $conn= ConnexionBD::getInstance();
 			</div>
     </div>
  </div>
-</div>
-  
-        <div class="copy_right">
-				<p>GL2 ON DEMAND SHOP © All rights Reseverd |</p>
-		   </div>
-    </div>
+  <?php   require("footerLayout.php");  ?>
+
     <script type="text/javascript">
 		$(document).ready(function() {			
 			$().UItoTop({ easingType: 'easeOutQuart' });
