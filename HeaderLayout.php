@@ -63,7 +63,6 @@ $conn=ConnexionBD::getInstance();
         </div>
         <div class="header_top">
             <div class="logo">
-                <a href="index.php"><img src="web/images/logo.png" alt="" width="100px" height="100px"/></a>
             </div>
             <?php
             afficherPanier();
