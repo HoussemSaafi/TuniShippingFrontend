@@ -25,20 +25,19 @@
                 <ul>
                     <li><a href="../EspaceClient/services/index.php">Sign In</a></li>
                     <li><a href="../EspaceClient/services/sign-up.php">Sign Up</a></li>
-                    <li><a href="../home_shop-pack/consulterPanier.php">View Cart</a></li>
+                    <li><a href="consulterPanier.php">View Cart</a></li>
                     <li><a href="../EspaceClient/services/suivieLivraison.php"> track Your Order </a></li>
                 </ul>
             </div>
             <div class="col_1_of_4 span_1_of_4">
                 <h4>Contact</h4>
                 <ul>
-                    <li><span>+91-123-456789</span></li>
-                    <li><span>+00-123-000000</span></li>
+                    <li><span>+216 26 211 344</span></li>
                 </ul>
                 <div class="social-icons">
                     <h4>Find us :</h4>
                     <ul>
-                        <li><a href="https://www.facebook.com/electrobennour/?fref=ts" target="_blank"><img src="web/images/facebook.png" alt="" /></a></li>
+                        <li><a href="https://www.facebook.com/Shipping-from-across-the-World-111456524500065" target="_blank"><img src="web/images/facebook.png" alt="" /></a></li>
                         <li><a href="https://twitter.com/twitterdev" target="_blank"><img src="web/images/twitter.png" alt="" /></a></li>
                         <li><a href="#" target="_blank"><img src="web/images/skype.png" alt="" /> </a></li>
                         <li><a href="#" target="_blank"> <img src="web/images/dribbble.png" alt="" /></a></li>
@@ -49,5 +48,4 @@
             </div>
         </div>
     </div>
-
 </div>
