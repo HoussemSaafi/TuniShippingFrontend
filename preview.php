@@ -462,7 +462,7 @@ $id_post = $_GET["IDProduit"]; //the post or the page id
     		<h3>Related Products</h3>
     		</div>
     		<div class="see">
-    			<p><a href="#">See all Products</a></p>
+    			<p><a href="see%20all%20products.php">See all Products</a></p>
     		</div>
     		<div class="clear"></div>
     	</div>
