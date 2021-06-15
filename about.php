@@ -7,7 +7,7 @@ include 'class.user.php';
 
 
 
-//session_start();
+session_start();
 
 
 
@@ -57,9 +57,9 @@ include 'raccourciPanier.php';
                     	{
                     		?>
                     			 <label class="h5">welcome : <?php print($userRow['username']); ?></label>
-                    		    <li><a href="EspaceClient/services/profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;Espace Client</a></li>
+                    		    <li><a href="EspaceClient/services/profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;Profile</a></li>
 
-                				<li><a href="EspaceClient/services/logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
+                				<li><a href="EspaceClient/services/logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
 
 
                 		<?php
@@ -123,10 +123,10 @@ include 'raccourciPanier.php';
 	<div class="header_bottom">
 	     	<div class="menu">
 	     		<ul>
-			    	<li><a href="index.php">Acceuil</a></li>
-			    	<li  class="active"><a href="about.php">A propos</a></li>
-			    	<li><a href="delivery.php">Livraison</a></li>
-			    	<li><a href="news.php">Nouveauté</a></li>
+			    	<li><a href="index.php">Home</a></li>
+			    	<li  class="active"><a href="about.php">About us</a></li>
+			    	<li><a href="delivery.php">Delivery</a></li>
+			    	<li><a href="news.php">News</a></li>
 			    	<li><a href="contact.php">Reclamation</a></li>
 			    	<div class="clear"></div>
      			</ul>
@@ -150,7 +150,7 @@ include 'raccourciPanier.php';
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
 					<h3>Meet our team</h3>
-                    <img src="web/images/Safa.jpg" alt="">
+                    <img src="web/images/safa.jpg" alt="">
 				 <div class="history-desc">
 					<p class="history">Safa Kedidi - CO FOUNDER.</p>
 					<p class="history">With the raise of technology, the world has become smaller and smaller! We want our customers to feel that even when it comes to shopping. Nowadays, tunisians visit shops from all over the world yet sometimes they can't buy stuff simply because we don't have it in our country. That is why we want to provide them with everything they need</p>
@@ -186,7 +186,7 @@ include 'raccourciPanier.php';
 					     	<li><a href="#">Not gonna lie, we started this project for the money. We just want to be rich and that's it.</a></li>
 					     	<li><a href="#">Never believe what Safa said.</a></li>
 					     	<li><a href="#">I agree with whatever Houssem said.</a></li>
-					     	<li><a href="#">Unknown printer took a galley</a></li>
+					     	
 					     	<li><a href="#">That's it fellas</a></li>
 					     </ul>
 					 </div>
@@ -196,70 +196,8 @@ include 'raccourciPanier.php';
     </div>
  </div>
 </div>
-   <div class="footer">
-   	  <div class="wrap">
-	     <div class="section group">
-				<div class="col_1_of_4 span_1_of_4">
-                    <h4>Information</h4>
-                    <ul>
-                        <li><a href="about.php"<li><span>
-                        <li><span</li></span></li>">About Us"</a></li>
-                        <li><a href="contact.php">Customer Service</a></li>
-                        <li><a href="#">Advanced Search</a></li>
-                        <li><a href="delivery.php">Orders and Returns</a></li>
-                        <li><a href="contact.php">Contact Us</a></li>
-                    </ul>
-					</div>
-				<div class="col_1_of_4 span_1_of_4">
-					<h4>Why buy from us</h4>
-						<ul>
-						<li><a href="about.php
-							<li><span>			<li><span></span></li></span></li>">About Us</a></li>
-						<li><a href="contact.php
-							<li><span>			<li><span></span></li></span></li>">Customer Service</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="contact.php
-							<li><span>			<li><span></span></li></span></li>">Site Map</a></li>
-						<li><a href="#">Search Terms</a></li>
-						</ul>
-				</div>
-				<div class="col_1_of_4 span_1_of_4">
-					<h4>My account</h4>
-						<ul>
-							<li><a href="contact.php
-							<li><span>			<li><span></span></li></span></li>">Sign In</a></li>
-							<li><a href="index.php
-							<li><span>			<li><span></span></li></span></li>">View Cart</a></li>
-							<li><a href="#">My Wishlist</a></li>
-							<li><a href="#">Track My Order</a></li>
-							<li><a href="contact.php
-							<li><span>			<li><span></span></li></span></li>">Help</a></li>
-						</ul>
-				</div>
-				<div class="col_1_of_4 span_1_of_4">
-					<h4>Contact</h4>
-						<ul>
-							<li><span>+216 26 211 344</span></li>
-							<li><span>			<li><span></span></li></span></li>
-						</ul>
-						<div class="social-icons">
-							<h4>Follow Us</h4>
-					   		  <ul>
-							      <li><a href="https://www.facebook.com/Shipping-from-across-the-World-111456524500065" target="_blank"><img src="web/images/facebook.png" alt="" /></a></li>
-							      <li><a href="#" target="_blank"><img src="web/images/twitter.png" alt="" /></a></li>
-							      <li><a href="#" target="_blank"><img src="web/images/skype.png" alt="" /> </a></li>
-							      <li><a href="#" target="_blank"> <img src="web/images/dribbble.png" alt="" /></a></li>
-							      <li><a href="#" target="_blank"> <img src="web/images/linkedin.png" alt="" /></a></li>
-							      <div class="clear"></div>
-						     </ul>
-   	 					</div>
-				</div>
-			</div>
-        </div>
-        <div class="copy_right">
-				<p>GL2 2020/2021 © All rights Reseverd |</p>
-		   </div>
-    </div>
+  <?php   require("footerLayout.php");  ?>
+
    <script type="text/javascript">
 		$(document).ready(function() {			
 			$().UItoTop({ easingType: 'easeOutQuart' });
