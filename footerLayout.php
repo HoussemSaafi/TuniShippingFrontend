@@ -36,7 +36,7 @@
                     <li><span>+00-123-000000</span></li>
                 </ul>
                 <div class="social-icons">
-                    <h4>Suivez nous</h4>
+                    <h4>Find us :</h4>
                     <ul>
                         <li><a href="https://www.facebook.com/electrobennour/?fref=ts" target="_blank"><img src="web/images/facebook.png" alt="" /></a></li>
                         <li><a href="https://twitter.com/twitterdev" target="_blank"><img src="web/images/twitter.png" alt="" /></a></li>
