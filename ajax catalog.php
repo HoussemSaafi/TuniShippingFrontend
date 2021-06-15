@@ -61,7 +61,7 @@ if (count($result) !=0)
 		{
 				$exist=0;
 		            echo '<div class="grid_1_of_4 images_1_of_4">';
-		            echo '<a href="preview.php?IDProduit='.$r['Ref'].'"><div style="width: 250px; height: 250px;;overflow:hidden"><img  src="data:image/jpeg;base64,'.base64_encode($r['ImgProduit']).'" /></div></a>';
+                      echo '<a href="preview.php?IDProduit='.$r['Ref'].'"><div style="width: 250px; height: 250px;;overflow:hidden"><img src="data:image;base64,'.$r['ImgProduit'].'"style=max-width:300px;width:100% /></div></a>';
 		            echo ' <h2>'.$r['Designation'].' </h2>';
 		            echo '<div class="price-details">';
 		            echo '<div class="price-number">';
