@@ -100,7 +100,7 @@ $conn=ConnexionBD::getInstance();
         <div class="header_bottom">
             <div class="menu">
                 <ul>
-                    <li ><a href="index.php">Houme</a></li>
+                    <li ><a href="index.php">Home</a></li>
                     <li ><a href="about.php">About us</a></li>
                     <li ><a href="delivery.php">Delivery</a></li>
                     <li ><a href="news.php">News</a></li>
