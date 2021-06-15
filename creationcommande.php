@@ -20,6 +20,7 @@ if(!isset($_SESSION)) session_start();
 			if($res)
             {
                 echo "<br>Votre Commande et livraison ont été ajoutés avec Succes!<br>";
+                header("Location:GenererFacture.php");
                 $_SESSION['panier']['prixProduit']= array();
                 $_SESSION['panier']['idProduit']=array();
                 $_SESSION['panier']['qte']=array();
@@ -33,5 +34,5 @@ if(!isset($_SESSION)) session_start();
                 echo "<br>livraison non ajoutée<br>";
                 echo"<a href='index.php'> Rentrez au Shop </a>";
                 ;}
-    header("Location:GenererFacture.php");
+
 ?>

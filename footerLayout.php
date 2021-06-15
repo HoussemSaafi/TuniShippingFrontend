@@ -2,44 +2,43 @@
     <div class="wrap">
         <div class="section group">
             <div class="col_1_of_4 span_1_of_4">
-                <h4>Frais</h4>
+                <h4>Information</h4>
                 <ul>
-                    <li><a href="index.php">Acceuil</a></li>
-                    <li><a href="see%20all%20products.php">La boutique</a></li>
-                    <li><a href="about.php">Notre histoire</a></li>
-                    <li><a href="news.php">Notre savoir-faire</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="see%20all%20products.php">Store</a></li>
+                    <li><a href="about.php">History</a></li>
+                    <li><a href="news.php">News</a></li>
                     <li><a href="Contact.php">Contact</a></li>
                 </ul>
             </div>
             <div class="col_1_of_4 span_1_of_4">
-                <h4>Aide</h4>
+                <h4>Help</h4>
                 <ul>
-                    <li><a href="delivery.php">Livraison et retours</a></li>
-                    <li><a href="news.php">Politique de la boutique</a></li>
-                    <li><a href="#">Modes de paiement</a></li>
-                    <li><a href="index.php">Recherche</a></li>
+                    <li><a href="delivery.php">Delivery</a></li>
+                    <li><a href="news.php">Shop policy</a></li>
+                    <li><a href="#">Payment </a></li>
+                    <li><a href="index.php">Search</a></li>
                 </ul>
             </div>
             <div class="col_1_of_4 span_1_of_4">
-                <h4>Compte</h4>
+                <h4>Account </h4>
                 <ul>
-                    <li><a href="/EspaceClient/services/profile.php">Se connecter</a></li>
-                    <li><a href="/EspaceClient/services/sign-up.php">S'inscrire</a></li>
-                    <li><a href="/consulterPanier.php">Consulter panier</a></li>
-                    <li><a href="/EspaceClient/services/suivieLivraison.php">Suivie commande</a></li>
+                    <li><a href="../EspaceClient/services/index.php">Sign In</a></li>
+                    <li><a href="../EspaceClient/services/sign-up.php">Sign Up</a></li>
+                    <li><a href="consulterPanier.php">View Cart</a></li>
+                    <li><a href="../EspaceClient/services/suivieLivraison.php"> track Your Order </a></li>
                 </ul>
             </div>
             <div class="col_1_of_4 span_1_of_4">
                 <h4>Contact</h4>
                 <ul>
-                    <li><span>+216 26 211 344					<li><span>			<li><span></span></li></span></li></span></li>
-                    <li><span>			<li><span></span></li></span></li>
+                    <li><span>+216 26 211 344</span></li>
                 </ul>
                 <div class="social-icons">
-                    <h4>Suivez nous</h4>
+                    <h4>Find us :</h4>
                     <ul>
                         <li><a href="https://www.facebook.com/Shipping-from-across-the-World-111456524500065" target="_blank"><img src="web/images/facebook.png" alt="" /></a></li>
-                        <li><a href="https://twitter.com/twitter" target="_blank"><img src="web/images/twitter.png" alt="" /></a></li>
+                        <li><a href="https://twitter.com/twitterdev" target="_blank"><img src="web/images/twitter.png" alt="" /></a></li>
                         <li><a href="#" target="_blank"><img src="web/images/skype.png" alt="" /> </a></li>
                         <li><a href="#" target="_blank"> <img src="web/images/dribbble.png" alt="" /></a></li>
                         <li><a href="#" target="_blank"> <img src="web/images/linkedin.png" alt="" /></a></li>
@@ -49,5 +48,4 @@
             </div>
         </div>
     </div>
-
 </div>

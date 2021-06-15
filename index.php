@@ -1,7 +1,7 @@
 
 <?php
 include 'class.user.php';
-//session_start();
+session_start();
 	if (isset($_SESSION['user_session'])) {
 	$user_id = $_SESSION['user_session'];
 
@@ -51,9 +51,9 @@ $conn= ConnexionBD::getInstance();
                     	{
                     		?>	
                     			 <label class="h5">welcome : <?php print($userRow['username']); ?></label>
-                    		    <li><a href="/EspaceClient/services/profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;Espace Client</a></li>
+                    		    <li><a href="/EspaceClient/services/profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;Profile</a></li>
               
-                				<li><a href="/EspaceClient/services/logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Se Déconnecter</a></li>
+                				<li><a href="/EspaceClient/services/logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
 
 
                 		<?php		
@@ -116,10 +116,10 @@ $conn= ConnexionBD::getInstance();
 	<div class="header_bottom">
 	     	<div class="menu">
 	     		<ul>
-			    	<li class="active"><a href="index.php">Acceuil</a></li>
-			    	<li><a href="about.php">A propos</a></li>
-			    	<li><a href="delivery.php">Livraison</a></li>
-			    	<li><a href="news.php">Nouveauté</a></li>
+			    	<li class="active"><a href="index.php">Home</a></li>
+			    	<li><a href="about.php">About us</a></li>
+			    	<li><a href="delivery.php">Delivery</a></li>
+			    	<li><a href="news.php">News</a></li>
 			    	<li><a href="contact.php">Reclamation</a></li>
 			    	<div class="clear"></div>
      			</ul>
@@ -215,7 +215,7 @@ $conn= ConnexionBD::getInstance();
     		<h3>New Products</h3>
     		</div>
     		<div class="see">
-                <p><a href="see all products.php">See all Products</a></p>
+    			<p><a href="see%20all%20products.php">See all Products</a></p>
     		</div>
     		<div class="clear"></div>
     	</div>
@@ -320,12 +320,8 @@ $conn= ConnexionBD::getInstance();
 			</div>
     </div>
  </div>
-</div>
-  
-        <div class="copy_right">
-				<p>GL2 ON DEMAND SHOP © All rights Reseverd |</p>
-		   </div>
-    </div>
+  <?php   require("footerLayout.php");  ?>
+
     <script type="text/javascript">
 		$(document).ready(function() {			
 			$().UItoTop({ easingType: 'easeOutQuart' });
