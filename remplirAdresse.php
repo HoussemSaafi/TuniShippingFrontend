@@ -1,6 +1,6 @@
 <?php
 	include 'class.user.php';
-  //  session_start();
+    session_start();
 	if (isset($_SESSION['user_session'])) {
         $user_id = $_SESSION['user_session'];
 
@@ -42,9 +42,9 @@
                     {
                         ?>
                         <label class="h5">welcome : <?php print($userRow['username']); ?></label>
-                        <li><a href="/EspaceClient/services/profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;Espace Client</a></li>
+                        <li><a href="/EspaceClient/services/profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;Profile</a></li>
 
-                        <li><a href="/EspaceClient/services/logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Se Déconnecter</a></li>
+                        <li><a href="/EspaceClient/services/logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out </a></li>
 
 
                         <?php
@@ -107,10 +107,10 @@
 	<div class="header_bottom">
 	     	<div class="menu">
 	     		<ul>
-			    	<li><a href="index.php">Acceuil</a></li>
-			    	<li><a href="about.php">A propos</a></li>
-			    	<li><a href="delivery.php">Livraison</a></li>
-			    	<li><a href="news.php">Nouveauté</a></li>
+			    	<li><a href="index.php">Home</a></li>
+			    	<li><a href="about.php">About us</a></li>
+			    	<li><a href="delivery.php">Delivery</a></li>
+			    	<li><a href="news.php">News</a></li>
 			    	<li><a href="contact.php">Reclamation</a></li>
 			    	<div class="clear"></div>
      			</ul>
