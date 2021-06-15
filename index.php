@@ -215,7 +215,7 @@ $conn= ConnexionBD::getInstance();
     		<h3>New Products</h3>
     		</div>
     		<div class="see">
-                <p><a href="see all products.php">See all Products</a></p>
+    			<p><a href="see%20all%20products.php">See all Products</a></p>
     		</div>
     		<div class="clear"></div>
     	</div>
