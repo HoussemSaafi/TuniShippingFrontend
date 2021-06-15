@@ -150,7 +150,7 @@ include 'raccourciPanier.php';
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
 					<h3>Meet our team</h3>
-                    <img src="web/images/Safa.jpg" alt="">
+                    <img src="web/images/safa.jpg" alt="">
 				 <div class="history-desc">
 					<p class="history">Safa Kedidi - CO FOUNDER.</p>
 					<p class="history">With the raise of technology, the world has become smaller and smaller! We want our customers to feel that even when it comes to shopping. Nowadays, tunisians visit shops from all over the world yet sometimes they can't buy stuff simply because we don't have it in our country. That is why we want to provide them with everything they need</p>
