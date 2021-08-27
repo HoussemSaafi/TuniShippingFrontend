@@ -2,10 +2,10 @@
 
 class ConnexionBD
 {
-    private static $_dbname = "sql11407789";
-    private static $_user = "sql11407789";
-    private static $_pwd = "2E4pTsZbBr";
-    private static $_host = "sql11.freemysqlhosting.net";
+    private static $_dbname = "sql4433253";
+    private static $_user = "sql4433253";
+    private static $_pwd = "ctn5MRnZRK";
+    private static $_host = "sql4.freesqldatabase.com";
     private static $_bdd = null;
     // to connect to database with phpmyadmin client check this link https://www.phpmyadmin.co/ and log in with credentials above.
     //You can register or use our default user to log in with: email: admin@admin.com ; password: admin

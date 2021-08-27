@@ -1,10 +1,10 @@
 <?php
 class ConnexionBD
 {
-    private static $_dbname = "sql11407789";
-    private static $_user = "sql11407789";
-    private static $_pwd = "2E4pTsZbBr";
-    private static $_host = "sql11.freemysqlhosting.net";
+     private static $_dbname = "sql4433253";
+    private static $_user = "sql4433253";
+    private static $_pwd = "ctn5MRnZRK";
+    private static $_host = "sql4.freesqldatabase.com";
     private static $_bdd = null;
 
     private function __construct()
